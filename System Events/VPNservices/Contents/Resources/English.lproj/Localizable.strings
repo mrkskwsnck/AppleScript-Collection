@@ -1,0 +1,10 @@
+"TYPE_IN_PASSWORD" = "Type in your default password below:";
+"USER_CANCELED" = "User canceled.";
+"CHOOSE_SERVER" = "Which server to connect to?";
+"HINT_MESSAGE" = "Please wait while the VPN connection is established within a timeout of SECONDS seconds… NOTE: This window will disappear after the timeout.";
+"PLEASE_WAIT" = "Please be patient";
+"CANCEL_BUTTON_LABEL" = "Cancel";
+"OK_BUTTON_LABEL" = "OK";
+"AUTHENTICATION_REQUIRED" = "Authentication required";
+"VPN_NOT_CONNECTED" = "VPN failed";
+"VPN_KEEP_TRYING" = "The VPN connection could not be established! Anyway, please keep trying doing so again…";

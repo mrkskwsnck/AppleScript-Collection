@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Network>
+    <Node ip="192.168.0.100">
+        <Account name="John Doe"/>
+    </Node>
+    <Node ip="192.168.0.101">
+        <Account name="Jane Doe"/>
+    </Node>
+</Network>
+<!-- EOF-->

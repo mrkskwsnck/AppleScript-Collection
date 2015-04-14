@@ -1,0 +1,30 @@
+Reverse engineering of Apple Mail Server (Mac OS X 10.6 Server) for Vacation Notice
+
+URI:    https://mail.redrauscher.de/EMAILRULES
+Method: POST
+
+
+Login request
+<?xml version="1.0"?><methodCall><methodName>login</methodName><params><param><value><string>markuskwasnicki</string></value></param><param><value><string>tempel09</string></value></param></params></methodCall>
+Login response
+<?xml version='1.0'?><methodResponse><params><param><value><struct><member><name>sessionId</name><value><string>E10EEB7A-B9F7-4A9C-AA6A-277FDD025387</string></value></member><member><name>displayName</name><value><string>Markus Kwaśnicki</string></value></member><member><name>hasLocalEmail</name><value><boolean>1</boolean></value></member><member><name>success</name><value><boolean>1</boolean></value></member></struct></value></param></params></methodResponse>
+
+Validate request
+<?xml version="1.0"?><methodCall><methodName>validateSession</methodName><params><param><value><string>948A5AA4-F213-4C91-80E7-818A069605D9</string></value></param></params></methodCall>
+Validate response
+<?xml version='1.0'?><methodResponse><params><param><value><boolean>1</boolean></value></param></params></methodResponse>
+
+Get request
+<?xml version="1.0"?><methodCall><methodName>getVacationNotice</methodName><params><param><value><string>948A5AA4-F213-4C91-80E7-818A069605D9</string></value></param></params></methodCall>
+Get response
+<?xml version='1.0'?><methodResponse><params><param><value><struct><member><name>start</name><value><string>12/30/2010</string></value></member><member><name>message</name><value><string>I am away on vacation and will be back in the office on Friday December 31, 2010.- Markus Kwaśnickiiiiiioiiiiiioiiiii</string></value></member><member><name>end</name><value><string>12/31/2010</string></value></member><member><name>enabled</name><value><boolean>0</boolean></value></member><member><name>subject</name><value><string>I'm away from my mail</string></value></member></struct></value></param></params></methodResponse>
+
+Set request
+<?xml version="1.0"?><methodCall><methodName>setVacationNotice</methodName><params><param><value><string>948A5AA4-F213-4C91-80E7-818A069605D9</string></value></param><param><value><boolean>0</boolean></value></param><param><value><string>12/30/2010</string></value></param><param><value><string>12/31/2010</string></value></param><param><value><string>I'm away from my mail</string></value></param><param><value><string>I am away on vacation and will be back in the office on Friday December 31, 2010.- Markus Kwaśnickiiiiiioiiiiiioiiii</string></value></param></params></methodCall>
+Set response
+<?xml version='1.0'?><methodResponse><params><param><value><boolean>1</boolean></value></param></params></methodResponse>
+
+Fault response
+<?xml version='1.0'?><methodResponse><fault><value><struct><member><name>faultCode</name><value><int>8002</int></value></member><member><name>faultString</name><value><string>error</string></value></member></struct></value></fault></methodResponse>
+<?xml version='1.0'?><methodResponse><fault><value><struct><member><name>faultCode</name><value><int>13</int></value></member><member><name>faultString</name><value><string>Invalid session 948A5AA4-F213-4C91-80E7-818A069605D9</string></value></member></struct></value></fault></methodResponse>
+

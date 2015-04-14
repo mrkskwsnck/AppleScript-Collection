@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DatabaseList>
+	<database name="">
+		<SshAlias noSshTunnel="[true|false]"></SshAlias>
+        <Host></Host>
+		<UserName></UserName>
+		<PassWord></PassWord>
+	</database>
+</DatabaseList>

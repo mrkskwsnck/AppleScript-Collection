@@ -1,0 +1,10 @@
+"TYPE_IN_PASSWORD" = "Bitte geben Sie Ihr standard Kennwort hier ein:";
+"USER_CANCELED" = "Vom Benutzer abgebrochen.";
+"CHOOSE_SERVER" = "Welcher Server soll verbunden werden?";
+"HINT_MESSAGE" = "Bitte warten Sie, während die VPN-Verbindung, innerhalb von SECONDS Sekunden, hergestellt wird… HINWEIS: Dieses Fenster wird nach dieser Zeitspanne geschlossen.";
+"PLEASE_WAIT" = "Bitte warten";
+"CANCEL_BUTTON_LABEL" = "Abbrechen";
+"OK_BUTTON_LABEL" = "OK";
+"AUTHENTICATION_REQUIRED" = "Authentifizierung erforderlich";
+"VPN_NOT_CONNECTED" = "VPN fehlgeschlagen";
+"VPN_KEEP_TRYING" = "Die VPN Verbindung konnte nicht hergestellt werden! Wie auch immer, probieren Sie es weiterhin so…";
